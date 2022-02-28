@@ -148,6 +148,10 @@ const touristLng = getAllLanguages(tourists);
 
 document.body.innerHTML="<h1>Gidai</h1>" + getAllLanguages(tourGuides).join("<br>") + "<h1>Turistai</h1>" + getAllLanguages(tourists).join("<br>");
 
+function reSort(langs: Array<string>): Array<string> {
+    return langs.sort()
+}
 
-
+const sortedGuides = reSort(guideLng);
+const sortedTourists = reSort(touristLng);
 
